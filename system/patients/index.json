@@ -1,0 +1,115 @@
+{
+ "schema": "patient_input_v2",
+ "seed": 2026,
+ "stay_end_hour": 49,
+ "timeline_hours": [
+  24,
+  48
+ ],
+ "patients": [
+  {
+   "patient_id": "DEMO-01",
+   "name": "가상환자 01",
+   "scenario": "폐렴 진행",
+   "intended_tier": "HIGH (점진 상승)",
+   "description": "발열·빈호흡이 시작되고 젖산·백혈구가 오르며, 폐렴 판독 후 혈압이 떨어진다. 점수가 시간에 따라 저위험에서 고위험으로 오르는 장면",
+   "age": 71,
+   "gender": "M",
+   "n_vitals": 49,
+   "n_labs": 25,
+   "n_cultures": 1,
+   "n_imaging": 2
+  },
+  {
+   "patient_id": "DEMO-02",
+   "name": "가상환자 02",
+   "scenario": "요로감염 의심 (검사 결과 도착)",
+   "intended_tier": "MODERATE → HIGH (젖산 결과가 나오는 시점부터 반영)",
+   "description": "38시간에 채혈한 젖산 결과가 41시간에 나온다. 결과가 저장되기 전 시점에는 판단에 쓰이지 않고, 저장된 시점부터 반영되는 '시점 기준 판단' 을 보여주는 장면",
+   "age": 79,
+   "gender": "F",
+   "n_vitals": 49,
+   "n_labs": 23,
+   "n_cultures": 2,
+   "n_imaging": 1
+  },
+  {
+   "patient_id": "DEMO-03",
+   "name": "가상환자 03",
+   "scenario": "바이탈만 나쁨 (수술 후 통증·탈수 설정)",
+   "intended_tier": "충돌 (바이탈 높음, EMR 낮음)",
+   "description": "빈맥·약간 낮은 혈압이 계속되지만 검사는 정상 범위. 바이탈과 EMR 의 판단이 갈리는 '합동 심문' 장면",
+   "age": 58,
+   "gender": "M",
+   "n_vitals": 49,
+   "n_labs": 14,
+   "n_cultures": 1,
+   "n_imaging": 1
+  },
+  {
+   "patient_id": "DEMO-04",
+   "name": "가상환자 04",
+   "scenario": "검사만 나쁨",
+   "intended_tier": "EMR 이 끌어올림 (바이탈 낮음, EMR 높음)",
+   "description": "바이탈은 아직 괜찮은데 젖산·백혈구·크레아티닌·빌리루빈이 오른다. EMR 이 바이탈의 빈틈을 보완하는 장면 (발표 상호보완 슬라이드와 연결)",
+   "age": 66,
+   "gender": "F",
+   "n_vitals": 49,
+   "n_labs": 43,
+   "n_cultures": 2,
+   "n_imaging": 1
+  },
+  {
+   "patient_id": "DEMO-05",
+   "name": "가상환자 05",
+   "scenario": "안정 환자",
+   "intended_tier": "LOW (유지)",
+   "description": "바이탈·검사 모두 정상 범위. 오경보가 울리지 않는 장면",
+   "age": 52,
+   "gender": "M",
+   "n_vitals": 49,
+   "n_labs": 11,
+   "n_cultures": 1,
+   "n_imaging": 1
+  },
+  {
+   "patient_id": "DEMO-06",
+   "name": "가상환자 06",
+   "scenario": "치료 후 호전",
+   "intended_tier": "HIGH → LOW (호전)",
+   "description": "병동에서 폐렴으로 배양을 채취한 뒤 악화되어 ICU 로 전동. 초기에는 고열·저혈압·젖산 상승이었다가 치료 후 바이탈과 검사가 회복된다. 점수와 등급이 내려가는 장면",
+   "age": 63,
+   "gender": "M",
+   "n_vitals": 49,
+   "n_labs": 19,
+   "n_cultures": 1,
+   "n_imaging": 2
+  },
+  {
+   "patient_id": "DEMO-07",
+   "name": "가상환자 07",
+   "scenario": "측정이 드문 환자",
+   "intended_tier": "LOW~MODERATE (결측 많아도 동작)",
+   "description": "바이탈이 3~4시간마다만 기록되고 체온·혈압 결측이 많다. 결측이 많아도 정상 동작하는 장면",
+   "age": 84,
+   "gender": "F",
+   "n_vitals": 14,
+   "n_labs": 3,
+   "n_cultures": 1,
+   "n_imaging": 0
+  },
+  {
+   "patient_id": "DEMO-08",
+   "name": "가상환자 08",
+   "scenario": "검사 기록이 거의 없는 환자",
+   "intended_tier": "바이탈 의존 (검사 없음)",
+   "description": "혈액검사·배양·영상이 없고 바이탈만 있다 (EMR 문서는 'No ...' 문장만). 에이전트 의존도가 바이탈 쪽으로 기우는 장면",
+   "age": 45,
+   "gender": "M",
+   "n_vitals": 49,
+   "n_labs": 0,
+   "n_cultures": 0,
+   "n_imaging": 0
+  }
+ ]
+}

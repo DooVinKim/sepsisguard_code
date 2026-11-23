@@ -1,0 +1,29 @@
+# PhysioNet DUA: 원본·파생 데이터와 MIMIC 학습 가중치는 절대 커밋하지 않음
+data/
+models/
+preds/
+results/
+logs/
+mimic-code/
+*.parquet
+*.npz
+*.csv
+*.csv.gz
+*.duckdb
+*.duckdb.wal
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.log
+
+# 환경
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+.env
+.venv/
+.claude/

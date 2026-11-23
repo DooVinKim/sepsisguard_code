@@ -1,0 +1,629 @@
+{
+ "patient_id": "DEMO-05",
+ "name": "가상환자 05",
+ "note": "가상 환자 (실제 환자 아님). 모든 값은 시연용으로 지어낸 값",
+ "scenario": "안정 환자",
+ "description": "바이탈·검사 모두 정상 범위. 오경보가 울리지 않는 장면",
+ "intended_tier": "LOW (유지)",
+ "story_onset_hour": null,
+ "demo": {
+  "age": 52,
+  "gender": "M"
+ },
+ "timeline_hours": [
+  24,
+  48
+ ],
+ "default_t": 48,
+ "vitals": [
+  {
+   "t": 0.1,
+   "HR": 76,
+   "SBP": 126,
+   "DBP": 70,
+   "RR": 17,
+   "SpO2": 97,
+   "Temp_C": 36.6,
+   "MAP": 89
+  },
+  {
+   "t": 1.2,
+   "HR": 79,
+   "SBP": 128,
+   "DBP": 74,
+   "RR": 16,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 2.01,
+   "HR": 78,
+   "SBP": 129,
+   "DBP": 69,
+   "RR": 16,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 89
+  },
+  {
+   "t": 3.08,
+   "HR": 85,
+   "SBP": 124,
+   "DBP": 71,
+   "RR": 16,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 89
+  },
+  {
+   "t": 4.21,
+   "HR": 74,
+   "SBP": 131,
+   "DBP": 74,
+   "RR": 16,
+   "SpO2": 98,
+   "Temp_C": 36.8,
+   "MAP": 93
+  },
+  {
+   "t": 5.15,
+   "HR": 72,
+   "SBP": 125,
+   "DBP": 80,
+   "RR": 13,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 95
+  },
+  {
+   "t": 6.07,
+   "HR": 69,
+   "SBP": 124,
+   "DBP": 75,
+   "RR": 13,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 91
+  },
+  {
+   "t": 7.0,
+   "HR": 78,
+   "SBP": null,
+   "DBP": null,
+   "RR": 16,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 8.16,
+   "HR": 78,
+   "SBP": 125,
+   "DBP": 76,
+   "RR": 15,
+   "SpO2": 98,
+   "Temp_C": 36.8,
+   "MAP": 92
+  },
+  {
+   "t": 9.08,
+   "HR": 74,
+   "SBP": 125,
+   "DBP": 75,
+   "RR": 15,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 10.2,
+   "HR": 83,
+   "SBP": 123,
+   "DBP": 78,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": 93
+  },
+  {
+   "t": 11.08,
+   "HR": 78,
+   "SBP": 129,
+   "DBP": 76,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 94
+  },
+  {
+   "t": 12.01,
+   "HR": 74,
+   "SBP": 125,
+   "DBP": 70,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": 37.2,
+   "MAP": 88
+  },
+  {
+   "t": 13.11,
+   "HR": 76,
+   "SBP": 129,
+   "DBP": 70,
+   "RR": 12,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 90
+  },
+  {
+   "t": 14.22,
+   "HR": 80,
+   "SBP": null,
+   "DBP": null,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 15.1,
+   "HR": 76,
+   "SBP": 128,
+   "DBP": 74,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 16.1,
+   "HR": 77,
+   "SBP": 120,
+   "DBP": 77,
+   "RR": 17,
+   "SpO2": 98,
+   "Temp_C": 36.9,
+   "MAP": 91
+  },
+  {
+   "t": 17.02,
+   "HR": 73,
+   "SBP": 128,
+   "DBP": 75,
+   "RR": 14,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 93
+  },
+  {
+   "t": 18.1,
+   "HR": 72,
+   "SBP": 132,
+   "DBP": 72,
+   "RR": 16,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 19.05,
+   "HR": 76,
+   "SBP": null,
+   "DBP": null,
+   "RR": 17,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 20.05,
+   "HR": 76,
+   "SBP": 120,
+   "DBP": 70,
+   "RR": 17,
+   "SpO2": 98,
+   "Temp_C": 36.9,
+   "MAP": 87
+  },
+  {
+   "t": 21.15,
+   "HR": 66,
+   "SBP": null,
+   "DBP": null,
+   "RR": 15,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 22.2,
+   "HR": 73,
+   "SBP": 117,
+   "DBP": 74,
+   "RR": 17,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 88
+  },
+  {
+   "t": 23.21,
+   "HR": 78,
+   "SBP": 128,
+   "DBP": 73,
+   "RR": 17,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 91
+  },
+  {
+   "t": 24.04,
+   "HR": 76,
+   "SBP": 125,
+   "DBP": 78,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": 36.8,
+   "MAP": 94
+  },
+  {
+   "t": 25.04,
+   "HR": 78,
+   "SBP": 126,
+   "DBP": 67,
+   "RR": 16,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": 87
+  },
+  {
+   "t": 26.25,
+   "HR": 75,
+   "SBP": null,
+   "DBP": null,
+   "RR": 14,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 27.15,
+   "HR": 77,
+   "SBP": 123,
+   "DBP": 75,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 91
+  },
+  {
+   "t": 28.05,
+   "HR": 74,
+   "SBP": 123,
+   "DBP": 75,
+   "RR": 16,
+   "SpO2": 97,
+   "Temp_C": 36.7,
+   "MAP": 91
+  },
+  {
+   "t": 29.08,
+   "HR": 72,
+   "SBP": 129,
+   "DBP": 68,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 88
+  },
+  {
+   "t": 30.16,
+   "HR": 75,
+   "SBP": 127,
+   "DBP": 77,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": 94
+  },
+  {
+   "t": 31.2,
+   "HR": 68,
+   "SBP": 125,
+   "DBP": 73,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 90
+  },
+  {
+   "t": 32.21,
+   "HR": 77,
+   "SBP": 123,
+   "DBP": 73,
+   "RR": 13,
+   "SpO2": 97,
+   "Temp_C": 36.9,
+   "MAP": 90
+  },
+  {
+   "t": 33.2,
+   "HR": 70,
+   "SBP": 126,
+   "DBP": 73,
+   "RR": 14,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": 91
+  },
+  {
+   "t": 34.0,
+   "HR": 72,
+   "SBP": null,
+   "DBP": null,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 35.2,
+   "HR": 72,
+   "SBP": 127,
+   "DBP": 75,
+   "RR": 15,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 36.12,
+   "HR": 76,
+   "SBP": 130,
+   "DBP": 70,
+   "RR": 15,
+   "SpO2": 99,
+   "Temp_C": 36.9,
+   "MAP": 90
+  },
+  {
+   "t": 37.18,
+   "HR": 74,
+   "SBP": 132,
+   "DBP": 74,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 93
+  },
+  {
+   "t": 38.22,
+   "HR": 73,
+   "SBP": 126,
+   "DBP": 70,
+   "RR": 15,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 89
+  },
+  {
+   "t": 39.14,
+   "HR": 70,
+   "SBP": 131,
+   "DBP": 76,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 94
+  },
+  {
+   "t": 40.08,
+   "HR": 71,
+   "SBP": 135,
+   "DBP": 70,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": 36.8,
+   "MAP": 92
+  },
+  {
+   "t": 41.12,
+   "HR": 76,
+   "SBP": 127,
+   "DBP": 75,
+   "RR": 14,
+   "SpO2": 99,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 42.17,
+   "HR": 75,
+   "SBP": 127,
+   "DBP": 70,
+   "RR": 15,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 89
+  },
+  {
+   "t": 43.14,
+   "HR": 76,
+   "SBP": 130,
+   "DBP": 76,
+   "RR": 14,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 94
+  },
+  {
+   "t": 44.18,
+   "HR": 71,
+   "SBP": null,
+   "DBP": null,
+   "RR": 16,
+   "SpO2": 98,
+   "Temp_C": 37.0,
+   "MAP": null
+  },
+  {
+   "t": 45.16,
+   "HR": 70,
+   "SBP": 123,
+   "DBP": 66,
+   "RR": 14,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 85
+  },
+  {
+   "t": 46.22,
+   "HR": 78,
+   "SBP": 122,
+   "DBP": 66,
+   "RR": 13,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 85
+  },
+  {
+   "t": 47.08,
+   "HR": 76,
+   "SBP": 127,
+   "DBP": 74,
+   "RR": 13,
+   "SpO2": 98,
+   "Temp_C": null,
+   "MAP": 92
+  },
+  {
+   "t": 48.11,
+   "HR": 70,
+   "SBP": 116,
+   "DBP": 73,
+   "RR": 17,
+   "SpO2": 98,
+   "Temp_C": 36.8,
+   "MAP": 87
+  }
+ ],
+ "labs": [
+  {
+   "t_drawn": 6.0,
+   "t_result": 7.0,
+   "name": "BUN",
+   "value": 14.0,
+   "unit": "mg/dL",
+   "ref_low": 6.0,
+   "ref_high": 20.0
+  },
+  {
+   "t_drawn": 6.0,
+   "t_result": 7.0,
+   "name": "Bicarbonate",
+   "value": 26.0,
+   "unit": "mEq/L",
+   "ref_low": 22.0,
+   "ref_high": 32.0
+  },
+  {
+   "t_drawn": 6.0,
+   "t_result": 7.0,
+   "name": "Creatinine",
+   "value": 0.8,
+   "unit": "mg/dL",
+   "ref_low": 0.5,
+   "ref_high": 1.2
+  },
+  {
+   "t_drawn": 6.0,
+   "t_result": 6.5,
+   "name": "Lactate",
+   "value": 1.0,
+   "unit": "mmol/L",
+   "ref_low": 0.5,
+   "ref_high": 2.0
+  },
+  {
+   "t_drawn": 6.0,
+   "t_result": 7.0,
+   "name": "Platelet",
+   "value": 244.0,
+   "unit": "K/uL",
+   "ref_low": 150.0,
+   "ref_high": 400.0
+  },
+  {
+   "t_drawn": 6.0,
+   "t_result": 7.0,
+   "name": "WBC",
+   "value": 7.2,
+   "unit": "K/uL",
+   "ref_low": 4.0,
+   "ref_high": 11.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "BUN",
+   "value": 13.0,
+   "unit": "mg/dL",
+   "ref_low": 6.0,
+   "ref_high": 20.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "Bicarbonate",
+   "value": 27.0,
+   "unit": "mEq/L",
+   "ref_low": 22.0,
+   "ref_high": 32.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "Creatinine",
+   "value": 0.8,
+   "unit": "mg/dL",
+   "ref_low": 0.5,
+   "ref_high": 1.2
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "Platelet",
+   "value": 251.0,
+   "unit": "K/uL",
+   "ref_low": 150.0,
+   "ref_high": 400.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "WBC",
+   "value": 6.9,
+   "unit": "K/uL",
+   "ref_low": 4.0,
+   "ref_high": 11.0
+  }
+ ],
+ "cultures": [
+  {
+   "t_collected": 0.5,
+   "specimen": "MRSA SCREEN",
+   "test_name": "MRSA SCREEN",
+   "t_resulted": 20.0,
+   "organisms": null,
+   "resistant": null,
+   "comment": "No MRSA isolated."
+  }
+ ],
+ "imaging": [
+  {
+   "t_exam": 2.0,
+   "t_report": 4.0,
+   "impression": "No acute cardiopulmonary process."
+  }
+ ]
+}

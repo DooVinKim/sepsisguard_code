@@ -1,0 +1,706 @@
+{
+ "patient_id": "DEMO-06",
+ "name": "가상환자 06",
+ "note": "가상 환자 (실제 환자 아님). 모든 값은 시연용으로 지어낸 값",
+ "scenario": "치료 후 호전",
+ "description": "병동에서 폐렴으로 배양을 채취한 뒤 악화되어 ICU 로 전동. 초기에는 고열·저혈압·젖산 상승이었다가 치료 후 바이탈과 검사가 회복된다. 점수와 등급이 내려가는 장면",
+ "intended_tier": "HIGH → LOW (호전)",
+ "story_onset_hour": null,
+ "demo": {
+  "age": 63,
+  "gender": "M"
+ },
+ "timeline_hours": [
+  6,
+  48
+ ],
+ "default_t": 48,
+ "vitals": [
+  {
+   "t": 0.25,
+   "HR": 126,
+   "SBP": 83,
+   "DBP": 49,
+   "RR": 26,
+   "SpO2": 92,
+   "Temp_C": 39.0,
+   "MAP": 60
+  },
+  {
+   "t": 1.2,
+   "HR": 124,
+   "SBP": 88,
+   "DBP": 48,
+   "RR": 26,
+   "SpO2": 92,
+   "Temp_C": null,
+   "MAP": 61
+  },
+  {
+   "t": 2.18,
+   "HR": 124,
+   "SBP": null,
+   "DBP": null,
+   "RR": 27,
+   "SpO2": 92,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 3.01,
+   "HR": 125,
+   "SBP": 86,
+   "DBP": 54,
+   "RR": 28,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 65
+  },
+  {
+   "t": 4.05,
+   "HR": 122,
+   "SBP": 84,
+   "DBP": 51,
+   "RR": 25,
+   "SpO2": 91,
+   "Temp_C": 38.7,
+   "MAP": 62
+  },
+  {
+   "t": 5.09,
+   "HR": 122,
+   "SBP": 93,
+   "DBP": 53,
+   "RR": 25,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 66
+  },
+  {
+   "t": 6.03,
+   "HR": 116,
+   "SBP": null,
+   "DBP": null,
+   "RR": 25,
+   "SpO2": 92,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 7.13,
+   "HR": 122,
+   "SBP": 86,
+   "DBP": 52,
+   "RR": 26,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 63
+  },
+  {
+   "t": 8.24,
+   "HR": 120,
+   "SBP": 88,
+   "DBP": 50,
+   "RR": 25,
+   "SpO2": 93,
+   "Temp_C": 38.6,
+   "MAP": 63
+  },
+  {
+   "t": 9.22,
+   "HR": 123,
+   "SBP": 90,
+   "DBP": 55,
+   "RR": 26,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 67
+  },
+  {
+   "t": 10.04,
+   "HR": 117,
+   "SBP": 98,
+   "DBP": 52,
+   "RR": 24,
+   "SpO2": 94,
+   "Temp_C": null,
+   "MAP": 67
+  },
+  {
+   "t": 11.24,
+   "HR": 118,
+   "SBP": 94,
+   "DBP": 55,
+   "RR": 26,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 68
+  },
+  {
+   "t": 12.14,
+   "HR": 112,
+   "SBP": 99,
+   "DBP": 57,
+   "RR": 24,
+   "SpO2": 94,
+   "Temp_C": 38.6,
+   "MAP": 71
+  },
+  {
+   "t": 13.17,
+   "HR": 116,
+   "SBP": 94,
+   "DBP": 55,
+   "RR": 24,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 68
+  },
+  {
+   "t": 14.22,
+   "HR": 111,
+   "SBP": 94,
+   "DBP": 61,
+   "RR": 23,
+   "SpO2": 93,
+   "Temp_C": null,
+   "MAP": 72
+  },
+  {
+   "t": 15.0,
+   "HR": 117,
+   "SBP": 103,
+   "DBP": 59,
+   "RR": 22,
+   "SpO2": 94,
+   "Temp_C": null,
+   "MAP": 74
+  },
+  {
+   "t": 16.22,
+   "HR": 111,
+   "SBP": 93,
+   "DBP": 63,
+   "RR": 23,
+   "SpO2": 94,
+   "Temp_C": 38.0,
+   "MAP": 73
+  },
+  {
+   "t": 17.18,
+   "HR": 112,
+   "SBP": 104,
+   "DBP": 57,
+   "RR": 24,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": 73
+  },
+  {
+   "t": 18.14,
+   "HR": 113,
+   "SBP": 102,
+   "DBP": 56,
+   "RR": 23,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": 71
+  },
+  {
+   "t": 19.1,
+   "HR": 110,
+   "SBP": 101,
+   "DBP": 65,
+   "RR": 22,
+   "SpO2": 94,
+   "Temp_C": null,
+   "MAP": 77
+  },
+  {
+   "t": 20.01,
+   "HR": 110,
+   "SBP": 102,
+   "DBP": 58,
+   "RR": 20,
+   "SpO2": 95,
+   "Temp_C": 38.2,
+   "MAP": 73
+  },
+  {
+   "t": 21.07,
+   "HR": 104,
+   "SBP": 92,
+   "DBP": 61,
+   "RR": 20,
+   "SpO2": 94,
+   "Temp_C": null,
+   "MAP": 71
+  },
+  {
+   "t": 22.06,
+   "HR": 106,
+   "SBP": 107,
+   "DBP": 59,
+   "RR": 22,
+   "SpO2": 94,
+   "Temp_C": null,
+   "MAP": 75
+  },
+  {
+   "t": 23.16,
+   "HR": 107,
+   "SBP": 112,
+   "DBP": 63,
+   "RR": 22,
+   "SpO2": 94,
+   "Temp_C": null,
+   "MAP": 79
+  },
+  {
+   "t": 24.21,
+   "HR": 102,
+   "SBP": 105,
+   "DBP": 64,
+   "RR": 21,
+   "SpO2": 94,
+   "Temp_C": 37.7,
+   "MAP": 78
+  },
+  {
+   "t": 25.14,
+   "HR": 97,
+   "SBP": 105,
+   "DBP": 64,
+   "RR": 20,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": 78
+  },
+  {
+   "t": 26.03,
+   "HR": 101,
+   "SBP": null,
+   "DBP": null,
+   "RR": 19,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 27.23,
+   "HR": 97,
+   "SBP": 113,
+   "DBP": 59,
+   "RR": 20,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": 77
+  },
+  {
+   "t": 28.14,
+   "HR": 92,
+   "SBP": null,
+   "DBP": null,
+   "RR": 21,
+   "SpO2": 96,
+   "Temp_C": 37.8,
+   "MAP": null
+  },
+  {
+   "t": 29.02,
+   "HR": 98,
+   "SBP": 106,
+   "DBP": 61,
+   "RR": 18,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": 76
+  },
+  {
+   "t": 30.15,
+   "HR": 96,
+   "SBP": 113,
+   "DBP": 64,
+   "RR": 22,
+   "SpO2": 95,
+   "Temp_C": null,
+   "MAP": 80
+  },
+  {
+   "t": 31.03,
+   "HR": 97,
+   "SBP": 107,
+   "DBP": 63,
+   "RR": 20,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 78
+  },
+  {
+   "t": 32.19,
+   "HR": 88,
+   "SBP": 113,
+   "DBP": 66,
+   "RR": 20,
+   "SpO2": 97,
+   "Temp_C": 37.1,
+   "MAP": 82
+  },
+  {
+   "t": 33.25,
+   "HR": 98,
+   "SBP": 122,
+   "DBP": 70,
+   "RR": 18,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 87
+  },
+  {
+   "t": 34.22,
+   "HR": 92,
+   "SBP": 112,
+   "DBP": 68,
+   "RR": 19,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 83
+  },
+  {
+   "t": 35.07,
+   "HR": 97,
+   "SBP": 107,
+   "DBP": 64,
+   "RR": 18,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 78
+  },
+  {
+   "t": 36.09,
+   "HR": 97,
+   "SBP": 106,
+   "DBP": 62,
+   "RR": 19,
+   "SpO2": 95,
+   "Temp_C": 37.2,
+   "MAP": 77
+  },
+  {
+   "t": 37.24,
+   "HR": 92,
+   "SBP": 117,
+   "DBP": 67,
+   "RR": 17,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 84
+  },
+  {
+   "t": 38.14,
+   "HR": 94,
+   "SBP": null,
+   "DBP": null,
+   "RR": 16,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 39.19,
+   "HR": 89,
+   "SBP": null,
+   "DBP": null,
+   "RR": 19,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 40.24,
+   "HR": 90,
+   "SBP": 118,
+   "DBP": 66,
+   "RR": 19,
+   "SpO2": 97,
+   "Temp_C": 37.1,
+   "MAP": 83
+  },
+  {
+   "t": 41.15,
+   "HR": 92,
+   "SBP": null,
+   "DBP": null,
+   "RR": 18,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": null
+  },
+  {
+   "t": 42.16,
+   "HR": 82,
+   "SBP": 119,
+   "DBP": 68,
+   "RR": 18,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 85
+  },
+  {
+   "t": 43.01,
+   "HR": 84,
+   "SBP": 117,
+   "DBP": 65,
+   "RR": 19,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 82
+  },
+  {
+   "t": 44.15,
+   "HR": 89,
+   "SBP": 118,
+   "DBP": 74,
+   "RR": 18,
+   "SpO2": 97,
+   "Temp_C": 37.0,
+   "MAP": 89
+  },
+  {
+   "t": 45.02,
+   "HR": 87,
+   "SBP": 120,
+   "DBP": 69,
+   "RR": 17,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 86
+  },
+  {
+   "t": 46.07,
+   "HR": 83,
+   "SBP": 119,
+   "DBP": 67,
+   "RR": 19,
+   "SpO2": 97,
+   "Temp_C": null,
+   "MAP": 84
+  },
+  {
+   "t": 47.2,
+   "HR": 84,
+   "SBP": 114,
+   "DBP": 65,
+   "RR": 18,
+   "SpO2": 96,
+   "Temp_C": null,
+   "MAP": 81
+  },
+  {
+   "t": 48.15,
+   "HR": 82,
+   "SBP": 117,
+   "DBP": 73,
+   "RR": 17,
+   "SpO2": 97,
+   "Temp_C": 37.0,
+   "MAP": 88
+  }
+ ],
+ "labs": [
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "BUN",
+   "value": 30.0,
+   "unit": "mg/dL",
+   "ref_low": 6.0,
+   "ref_high": 20.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "Bands",
+   "value": 10.0,
+   "unit": "%",
+   "ref_low": 0.0,
+   "ref_high": 5.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "Bicarbonate",
+   "value": 18.0,
+   "unit": "mEq/L",
+   "ref_low": 22.0,
+   "ref_high": 32.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "CRP",
+   "value": 210.0,
+   "unit": "mg/L",
+   "ref_low": 0.0,
+   "ref_high": 5.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "Creatinine",
+   "value": 1.6,
+   "unit": "mg/dL",
+   "ref_low": 0.5,
+   "ref_high": 1.2
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 1.5,
+   "name": "Lactate",
+   "value": 3.6,
+   "unit": "mmol/L",
+   "ref_low": 0.5,
+   "ref_high": 2.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "Neutrophils",
+   "value": 88.0,
+   "unit": "%",
+   "ref_low": 50.0,
+   "ref_high": 70.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "Platelet",
+   "value": 146.0,
+   "unit": "K/uL",
+   "ref_low": 150.0,
+   "ref_high": 400.0
+  },
+  {
+   "t_drawn": 1.0,
+   "t_result": 2.0,
+   "name": "WBC",
+   "value": 18.2,
+   "unit": "K/uL",
+   "ref_low": 4.0,
+   "ref_high": 11.0
+  },
+  {
+   "t_drawn": 14.0,
+   "t_result": 15.5,
+   "name": "Creatinine",
+   "value": 1.4,
+   "unit": "mg/dL",
+   "ref_low": 0.5,
+   "ref_high": 1.2
+  },
+  {
+   "t_drawn": 14.0,
+   "t_result": 14.5,
+   "name": "Lactate",
+   "value": 2.3,
+   "unit": "mmol/L",
+   "ref_low": 0.5,
+   "ref_high": 2.0
+  },
+  {
+   "t_drawn": 14.0,
+   "t_result": 15.5,
+   "name": "WBC",
+   "value": 15.1,
+   "unit": "K/uL",
+   "ref_low": 4.0,
+   "ref_high": 11.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "BUN",
+   "value": 22.0,
+   "unit": "mg/dL",
+   "ref_low": 6.0,
+   "ref_high": 20.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "Bicarbonate",
+   "value": 22.0,
+   "unit": "mEq/L",
+   "ref_low": 22.0,
+   "ref_high": 32.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.0,
+   "name": "Creatinine",
+   "value": 1.1,
+   "unit": "mg/dL",
+   "ref_low": 0.5,
+   "ref_high": 1.2
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 30.5,
+   "name": "Lactate",
+   "value": 1.3,
+   "unit": "mmol/L",
+   "ref_low": 0.5,
+   "ref_high": 2.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "Neutrophils",
+   "value": 74.0,
+   "unit": "%",
+   "ref_low": 50.0,
+   "ref_high": 70.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.5,
+   "name": "Platelet",
+   "value": 168.0,
+   "unit": "K/uL",
+   "ref_low": 150.0,
+   "ref_high": 400.0
+  },
+  {
+   "t_drawn": 30.0,
+   "t_result": 31.0,
+   "name": "WBC",
+   "value": 10.4,
+   "unit": "K/uL",
+   "ref_low": 4.0,
+   "ref_high": 11.0
+  }
+ ],
+ "cultures": [
+  {
+   "t_collected": -30.0,
+   "specimen": "BLOOD CULTURE",
+   "test_name": "Blood Culture, Routine",
+   "t_resulted": -6.0,
+   "organisms": null,
+   "resistant": null,
+   "comment": "NO GROWTH."
+  }
+ ],
+ "imaging": [
+  {
+   "t_exam": 1.0,
+   "t_report": 3.0,
+   "impression": "Left lower lobe opacity concerning for pneumonia."
+  },
+  {
+   "t_exam": 34.0,
+   "t_report": 36.0,
+   "impression": "Interval resolution of left lower lobe opacity. No new consolidation. Lungs are clear."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "_note": "SepsisGuard 최종 엔진 설정. 모든 값은 학습 코드·집계에서 가져온 상수 (환자 데이터 아님)",
+ "paths_relative_to_project_root": {
+  "vital_ckpt": "models/v2/vital_T4_relax_w24_all.pt",
+  "fusion_ckpt": "models/fusion_pubmedbert_pw5_s1/fusion.pt",
+  "emr_dir": "data/pubmedbert_full_fullft_pw5/pubmedbert_full_fullft_pw5",
+  "vital_norm": "demo_final/config/vital_norm_stats.json"
+ },
+ "emr_base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+ "emr_maxlen": 512,
+ "vital": {
+  "features": ["HR", "SBP", "RR", "SpO2", "Temp", "DBP", "MAP", "SI"],
+  "window_rows": 24,
+  "mask": -1.0,
+  "age_mean": 62.645337,
+  "age_sd": 16.606427,
+  "clean_range": {"HR": [20, 250], "SBP": [40, 250], "RR": [4, 60], "SpO2": [50, 100], "Temp": [29.4, 43.3]},
+  "_source": "02c_vital_label_split.R (시간 칸 평균, SI = HR/SBP, train Z-score, 결측 -1), fusion_06a_v3.py (직전 24 행, pad, age_z = train 행 기준)"
+ },
+ "emr_doc": {
+  "win_lab": 48, "win_micro": 24, "win_micro_res": 72, "win_radio": 72,
+  "trend_tol": 0.05, "max_micro_lines": 8, "imp_max": 1000,
+  "lab_order": ["Lactate", "WBC", "Neutrophils", "Bands", "Platelet", "Creatinine", "BUN", "Bilirubin", "Bicarbonate", "CRP"],
+  "_source": "04_emr_windowing.R, 04c_emr_windowing.R, 05c_emr_serialize.R"
+ },
+ "thresholds": {
+  "fusion": {"high": 0.61, "moderate": 0.39, "_source": "융합 seed 1 의 val 특이도 95% / 85% 지점 (0.611 / 0.393 반올림)"},
+  "vital": {"high": 0.6798, "moderate": 0.5886, "_source": "바이탈 v3 단독 확률의 val 특이도 95% / 85% 지점"},
+  "emr": {"high": 0.133, "moderate": 0.0567, "_source": "EMR (PubMedBERT pw5) 단독 확률의 val 특이도 95% / 85% 지점"}
+ },
+ "guideline_rules": {
+  "_note": "책임 의사 모듈 = 규칙 플래그 (Sepsis-3 관련 지표). SOFA 점수·감염 의심·의식 상태는 계산하지 않음",
+  "labs": {"Lactate": [">", 2.0, "조직 저관류"], "Platelet": ["<", 150, "응고 (SOFA 항목 관련)"], "Creatinine": [">", 1.2, "신장 (SOFA 항목 관련)"],
+           "Bilirubin": [">", 1.2, "간 (SOFA 항목 관련)"], "WBC": ["outside", [4, 12], "감염·염증"]},
+  "qsofa": {"RR": [">=", 22], "SBP": ["<=", 100]}
+ },
+ "model_info": {
+  "test_auroc": {"fusion": 0.8149, "fusion_sd": 0.0001, "vital": 0.726, "emr": 0.752, "concat": 0.802},
+  "test_auprc": {"fusion": 0.237, "vital": 0.157, "emr": 0.165, "concat": 0.216},
+  "tier_positive_rate": {"HIGH": 0.262, "MODERATE": 0.109, "LOW": 0.023},
+  "high_tier": {"sensitivity": 0.359, "specificity": 0.949, "ppv": 0.262, "lr_pos": 7.1, "easy_neg_alarm": 0.040, "sepsis_stay_detect": 0.476}
+ }
+}
