@@ -122,7 +122,6 @@ python system/build_data_js.py --out <시연 저장소>/data
 
 - 전처리: R (data.table, arrow, duckdb)
 - 학습: Python, PyTorch, transformers, peft, scikit-learn, pandas, pyarrow
-- 개발 하드웨어: RTX 3070 (8GB), RAM 16GB
 
 ## 데이터와 가중치에 대해
 
