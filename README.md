@@ -15,7 +15,7 @@ ICU 환자의 바이탈 시계열과 EMR(검사·배양·영상 판독)을 각�
 | 이름 | GitHub |
 |---|---|
 | 김두빈 | [@DooVinKim](https://github.com/DooVinKim) |
-| 노민 |  |
+| 노민 | [@rohmin806](https://github.com/rohmin806) |
 | 남건우 |  |
 
 ---
